@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bedirhan.dentalmarket.SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+      android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/uyelikturu"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/bireysel"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:checked="false"
+            android:theme="@style/SCBSwitch"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/switch_button"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/kurumsal"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:id="@+id/ll_kurumsal">
+
+        <EditText
+            android:id="@+id/company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/company_name"/>
+
+        <Spinner
+            android:id="@+id/company_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/company_type"
+            android:alpha="0.7"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/vergi_dairesi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/vergi_dairesi"/>
+
+        <EditText
+            android:id="@+id/vergi_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/vergi_no" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/ll_bireysel">
+
+                <EditText
+                   style="@style/Size"
+                    android:layout_marginRight="10dp"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName"
+                    android:id="@+id/name"/>
+
+                <EditText
+                    style="@style/Size"
+                    android:layout_marginRight="10dp"
+                    android:hint="@string/surname"
+                    android:inputType="textPersonName"
+                    android:id="@+id/surname"/>
+
+                <EditText
+                    android:id="@+id/email"
+                   style="@style/Size"
+                    android:hint="@string/eposta"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/password"
+                    style="@style/Size"
+                    android:hint="@string/prompt_password"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/password_again"
+                    style="@style/Size"
+                    android:hint="@string/password_again"
+                    android:inputType="textPassword" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/dogumtarihi"
+            android:textSize="18dp"
+            />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:entries="@array/days"
+                        android:alpha="0.7"
+                        ></Spinner>
+
+                    <Spinner
+                        android:id="@+id/mounth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:entries="@array/mounths"
+                        android:alpha="0.7"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:entries="@array/years"
+                        android:alpha="0.7"></Spinner>
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/job"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/jobs"
+                    android:layout_marginTop="5dp"
+                    android:alpha="0.7"
+                    ></Spinner>
+
+                <Spinner
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                   ></Spinner>
+
+                <Spinner
+                    android:id="@+id/district"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    ></Spinner>
+
+                <EditText
+                    android:id="@+id/phone"
+                   style="@style/Size"
+                    android:inputType="phone"
+                    android:hint="@string/telefon"
+                    android:maxLength="10"/>
+
+                <EditText
+                    android:id="@+id/smartphone"
+                  style="@style/Size"
+                    android:inputType="phone"
+                    android:hint="@string/mobilephone"
+                    android:maxLength="10"/>
+
+                <EditText
+                    android:id="@+id/iban"
+                   style="@style/Size"
+                    android:inputType="text"
+                    android:hint="@string/iban"
+                   android:visibility="invisible"
+                   />
+
+
+
+
+
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.04"
+                android:orientation="vertical"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                >
+                <CheckBox
+                    android:id="@+id/sozlesme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/uyeliksozlesmesi" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.08"
+                android:orientation="vertical"
+                android:layout_marginTop="3dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/sign_up"
+                    android:background="@color/MenuMavisi"
+                    android:textColor="@color/Beyaz"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/btn_kayit"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Beyaz"
+    tools:context="com.example.bedirhan.dentalmarket.ProductDetailActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.5"
+    android:orientation="horizontal"
+    android:id="@+id/ly_header">
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                >
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20dp"
+            />
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p_price"
+            android:textColor="@color/Black"
+            android:textSize="25dp"
+            android:text="@string/TL"
+            android:gravity="center_vertical"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            /></LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:id="@+id/ly_main">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+        <TextView
+            android:id="@+id/product_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/Black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"/>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adet"
+                android:textSize="18dp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/days"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/urun_adet"
+                android:gravity="center"
+                ></Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_gravity="center"
+            android:gravity="right"
+            >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_add_basket"
+            android:text="@string/addbasket"
+            android:background="@color/MenuMavisi"
+            android:textColor="@color/Beyaz"
+            android:textStyle="bold"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="20dp"
+            android:layout_margin="3dp"
+            />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/ShopDiv">
+
+        <ImageView
+            android:id="@+id/shop_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/shop_name"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/ShopName"
+            android:textSize="25dp"
+            android:textAlignment="center"/>
+
+
+     <ImageButton
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:id="@+id/btn_firma_detay"
+         android:layout_marginLeft="5dp"
+         android:background="@drawable/uparrow"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:id="@+id/ly_shop_detail"
+        android:background="@color/ShopDiv"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="2">
+            <TableRow android:background="@color/ShopRow"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="3dp">
+                <TextView android:padding="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/Black"
+                    android:text="@string/telefon"
+                    android:textSize="16dp"/>
+                <TextView android:text="@string/ikinokta"
+                    android:textSize="16dp"
+                    android:textColor="@color/Black"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:id="@+id/s_telefon"
+                    android:textColor="@color/Black"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="deneme"
+                    />
+            </TableRow>
+            <TableRow android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="3dp" android:background="@color/ShopRowTwo">
+                <TextView android:padding="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/Black"
+                    android:text="@string/ceptel"
+                    android:textSize="16dp"/>
+                <TextView android:text="@string/ikinokta"
+                    android:textSize="16dp"
+                    android:textColor="@color/Black"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:id="@+id/s_ceptel"
+                    android:textColor="@color/Black"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="10dp"
+                    />
+            </TableRow>
+            <TableRow  android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="3dp" android:background="@color/ShopRow">
+                <TextView android:padding="3dp" android:text="@string/eposta" android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/Black"
+                    />
+                <TextView android:text="@string/ikinokta"
+                    android:textSize="16dp"
+                    android:textColor="@color/Black"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView android:textColor="@color/Black"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/s_eposta"/>
+            </TableRow>
+            <TableRow android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="15dp" android:background="@color/ShopRowTwo"
+                android:layout_width="10dp"
+                android:gravity="center">
+            </TableRow>
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/ll_shopsproducts"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/magazaurun"
+            android:textSize="18dp"
+            android:textColor="@color/MagazaDiger"
+            android:gravity="center"/>
+        <ImageButton android:layout_gravity="center"
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:background="@drawable/rightarrow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

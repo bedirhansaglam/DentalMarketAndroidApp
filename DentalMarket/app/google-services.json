@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "398093903109",
+    "firebase_url": "https://dentalmarket-1301d.firebaseio.com",
+    "project_id": "dentalmarket-1301d",
+    "storage_bucket": "dentalmarket-1301d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398093903109:android:d814d9fd7aa7b610",
+        "android_client_info": {
+          "package_name": "com.example.bedirhan.dentalmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398093903109-94bs52r65j1tp5ts8t11ouds9r9srvet.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC58ysQktXH_PLfqqyPLJhFJhltobf0iC4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

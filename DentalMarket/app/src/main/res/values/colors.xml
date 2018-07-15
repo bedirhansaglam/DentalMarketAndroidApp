@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="Beyaz">#FFFFFF</color>
+    <color name="MenuMavisi">#337ab7</color>
+    <color name="Black">#000000</color>
+    <color name="ShopName">#337ab7</color>
+    <color name="ShopDiv">#eee</color>
+    <color name="ShopRow">#ddd</color>
+    <color name="ShopRowTwo">#bbb</color>
+    <color name="MagazaDiger">#888</color>
+    <color name="transparent">#00000000</color>
+    <color name="switch_active">#037d30</color>
+    <color name="switch_inactive">#f1f1f1</color>
+    <color name="switch_forecolor">#037d30</color>
+    <color name="kirmizi">#FF0000</color>
+    <color name="btn_yesil">#5cb85c</color>
+    <color name="btn_delete">#d43f3a</color>
+    <color name="card_product_name">#2781bd</color>
+</resources>

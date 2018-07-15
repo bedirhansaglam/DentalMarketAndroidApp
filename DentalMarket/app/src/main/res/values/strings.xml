@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Dental Market</string>
+    <string name="FirmaDetay">Satıcı Detay</string>
+    <string name="TL">₺</string>
+    <string name="telefon">Telefon</string>
+    <string name="eposta">E-Posta</string>
+    <string name="ceptel">Cep Telefonu</string>
+    <string name="ikinokta">:</string>
+    <string name="magazaurun">Mağazanın Diğer Ürünleri</string>
+    <string name="quit">Uygulamayı Kapat</string>
+    <string name="really_quit">Uygulamayı gerçekten kapatmak istiyor musunuz?</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+    <string name="remember_me">Beni hatırla</string>
+    <string name="prompt_password">Şifre</string>
+    <string name="action_sign_in">Giriş</string>
+    <string name="error_invalid_email">E-mail veya şifre hatalı</string>
+    <string name="error_invalid_password">E-mail veya şifre hatalı</string>
+    <string name="error_incorrect_password">Şifre hatalı</string>
+    <string name="sign_up">Kayıt Ol</string>
+    <string name="bireysel">Bireysel</string>
+    <string name="kurumsal">Kurumsal</string>
+    <string name="uyelikturu">ÜYELİK TÜRÜ :</string>
+    <string name="name">Ad</string>
+    <string name="surname">Soyad</string>
+    <string name="password_again">Şifre Tekrar</string>
+    <string name="dogumtarihi">Doğum Tarihi</string>
+    <string name="uyeliksozlesmesi">Üyelik sözleşmesini okudum kabul ediyorum</string>
+    <string name="sozlesmegor">(Sözleşmeyi görmek için tıklayınız.)</string>
+    <string name="mobilephone">Cep Telefonu</string>
+    <string name="iban">IBAN no</string>
+    <string name="company_name">Şirket Adı</string>
+    <string name="vergi_dairesi">Vergi Dairesi</string>
+    <string name="vergi_no">Vergi Numarası</string>
+
+    <string name="warning">Uyarı</string>
+    <string name="warning_info">Lütfen bilgileri eksiksiz giriniz...</string>
+    <string name="ok">Tamam</string>
+    <string name="password_error">Hata</string>
+    <string name="password_error_info">Şifreler aynı değil</string>
+    <string name="sozlesme">Sözleşme</string>
+    <string name="kabul_et">Sözleşmeyi kabul ediyorum</string>
+    <string name="myshoppingbasket">Sepetim</string>
+    <string name="addbasket">Sepete Ekle</string>
+    <string name="adet">Adet :</string>
+    <string name="arti">+</string>
+    <string name="eksi">-</string>
+    <string name="shops_name">Satıcı Firma :</string>
+    <string name="card_ok">Tebrikler. Ürün başarıyla sepete eklendi.</string>
+    <string name="close">X</string>
+    <string name="odeme_yap">Ödeme Yap</string>
+    <string name="sil">Sil</string>
+    <string name="toplam_fiyat">Toplam:</string>
+    <string-array name="jobs">
+        <item>Dişçi</item>
+        <item>Doktor</item>
+        <item>Mühendis</item>
+    </string-array>
+    <string-array name="company_type">
+        <item>Şahıs Şirketi</item>
+        <item>Limited Şirket</item>
+        <item>Ananom Şirket</item>
+    </string-array>
+
+</resources>
